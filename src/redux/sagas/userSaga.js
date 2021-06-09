@@ -4,11 +4,11 @@ const apiUrl = 'https://jsonlaceholder.typicode.com/users';
 
 function getApi(){
     return fetch(apiUrl, {
-        methods: 'GET',
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json',
         }
-    }).then(response => response.json)
+    }).then(response => response.json())
         .catch((error)=>{throw error})
 }
 
